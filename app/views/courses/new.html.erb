@@ -1,0 +1,27 @@
+<h2>請輸入課程資訊</h2>
+
+<%= form_for @course do|f|%>
+
+<div>
+	課程名稱<%=f.text_field :name %>
+</div>
+
+<div>
+	授課老師<%=f.text_field :teache %>
+</div>
+
+<div>
+	上課地點<%=f.text_field :place %>
+</div>
+
+<div>
+	上課時間<%=f.text_field :time %>
+</div>
+
+<div>
+	課程學分<%=f.text_field :credit %>
+</div>
+	
+<%=f.submit%>
+
+<%end%>

@@ -1,0 +1,23 @@
+<h2>課程列表</h2>
+
+<% @courses.each do|course|%>
+
+<div>
+	<table border="1">
+		<tr>
+			<td width="120" height="35">
+				<%= link_to course.name, course_path(course) %>
+			</td>
+			
+			<td width="120" height="35">
+				<%= link_to "修改課程", edit_course_path(course)%>
+			</td>
+			
+			<td width="120" height="35">
+				<%= link_to "刪除課程", course_path(course), method:"delete" %>
+			</td>
+		</tr>
+	</table>
+</div>
+
+<%end%>	
